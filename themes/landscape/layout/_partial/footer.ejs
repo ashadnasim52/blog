@@ -1,0 +1,71 @@
+<footer id="footer">
+  <div class="linksFollow">
+    <span class="LinksFollow_text">
+      Follow me on
+    </span>
+    <div class="LinksFollow_links">
+      <span class="socialMedia SocialMedia1">
+        <a class="link" href="#">
+          <i class="fab fa-facebook" aria-hidden="true"></i>
+        </a>
+      </span>
+      <span class="socialMedia SocialMedia2">
+        <a class="link" href="#">
+          <i class="fab fa-github" aria-hidden="true"></i>
+        </a>
+      </span>
+      <span class="socialMedia SocialMedia3">
+        <a class="link" href="#">
+          <i class="fab fa-linkedin-in    "></i>
+        </a>
+      </span>
+      <span class="socialMedia SocialMedia4">
+        <a class="link" href="#">
+          <i class="fab fa-stack-overflow    "></i>
+        </a>
+      </span>
+    </div>
+  </div>
+
+  <div class="important">
+    <span class="important_Header">
+      Some Important Links
+    </span>
+    <a href="#" class="important_content">
+      Earn With Us &#9001;minimum-$7&#9002;
+    </a>
+    <a href="#" class="important_content">
+      Android App Devlopment
+    </a>
+    <a href="#" class="important_content">
+      Web Devlopment
+    </a>
+  </div>
+  <div class="contact">
+    <span class="contact_Header">
+      Contact Us
+    </span>
+    <span class="contact_item">
+      <i class="fa fa-phone" aria-hidden="true"></i>
+      +91-8541866519
+    </span>
+    <span class="contact_item">
+      <i class="fa fa-location-arrow" aria-hidden="true"></i>
+      Jharkhand,India
+    </span>
+    <span class="contact_item">
+      <i class="fa fa-inbox" aria-hidden="true"></i>
+      ashadnasim123@gmail.com
+    </span>
+  </div>
+
+  <% if (theme.sidebar === 'bottom'){ %> <%- partial('_partial/sidebar') %> <% }
+  %>
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title
+      %><br />
+      <%= __('powered_by') %> <a class="link" href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
